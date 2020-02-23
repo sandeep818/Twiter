@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="697dp"
+        android:layout_height="741dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,9 +25,10 @@
         android:foregroundGravity="center"
         android:gravity="center|center_horizontal"
         android:shadowColor="#FFFFFF"
+        android:fontFamily="@font/baloo"
         android:text="welcome !"
         android:textColor="#F8F6F6"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,6 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.faltenreich.textinputview.TextInputView
+        android:id="@+id/user_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,10 +59,11 @@
         android:tint="@android:color/tertiary_text_light">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter UserName"
+            android:textColorHint="@color/pdlg_color_white"
             android:textColorHighlight="#FFEB3B"
             android:textColorLink="#FFEB3B"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +73,48 @@
 
     </com.faltenreich.textinputview.TextInputView>
 
+    <com.faltenreich.textinputview.TextInputView
+        android:id="@+id/textInputView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
 
+        android:tint="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_ok"
+        app:overlapAction="push">
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorHint="@color/pdlg_color_white"
+            android:textColorLink="#FFEB3B"
+            android:tint="@android:color/holo_blue_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.faltenreich.textinputview.TextInputView>
+
+    <Button
+        android:background="@drawable/get_started"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/baloo"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="log in"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

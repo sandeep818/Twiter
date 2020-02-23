@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary"
+    tools:context=".Details">
+
+    <!-- TODO: Update blank fragment layout -->
+<ListView
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:divider="@color/pdlg_color_white"
+    android:dividerHeight="1dp"
+    android:listSelector="@color/pdlg_color_blue"
+    android:layout_height="match_parent">
+
+
+
+
+
+</ListView>
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_drawer_header_height">250dp</dimen>
+    <dimen name="nav_header_spacing">6dp</dimen>
+
+
+
+
+</resources>

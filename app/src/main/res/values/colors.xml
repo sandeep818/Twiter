@@ -5,7 +5,7 @@
     <color name="colorAccent">#ffb300</color>
 <!--    color for text-->
     <color name="black">#000000</color>
-    <color name="cream">#fffde7</color>
+    <color name="cream">#FFFDE7</color>
     <color name="gradiant_start">#1e88e5</color>
-    <color name="gradiant_end">#1565c0</color>
+    <color name="gradiant_end">#00BCD4</color>
 </resources>

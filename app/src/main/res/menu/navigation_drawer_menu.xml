@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+  <group android:checkableBehavior="single">
+      <item
+          android:id="@+id/menu"
+          android:title="Menu"
+          android:icon="@drawable/home"/>
+
+      <item
+          android:id="@+id/bank"
+          android:title="Bank"
+          android:icon="@drawable/wallet"/>
+  </group>
+    <item android:title="Community">
+        <menu>
+            <item
+                android:id="@+id/community"
+                android:title="Group"
+                android:icon="@drawable/community"
+               />
+            <item android:id="@+id/share"
+                android:title="Share"
+                android:icon="@drawable/share" />
+            <item android:id="@+id/logout"
+                android:title="Log Out"
+                android:icon="@drawable/logout" />
+        </menu>
+
+    </item>
+</menu>
