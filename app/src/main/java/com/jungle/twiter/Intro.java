@@ -51,7 +51,7 @@ public class Intro extends AppCompatActivity {
 
 
         final List<ScreenItem> screenItems= new ArrayList<>();
-        screenItems.add(new ScreenItem("Play & earn","the best place for you to be entertained and to make earnings with real online money games india.",R.drawable.money));
+        screenItems.add(new ScreenItem("Play & earn","the best place for you to be entertained and to make earnings with real online money games india.",R.drawable.earn_money));
         screenItems.add(new ScreenItem("Secure","We're excited to introduce Safe App with brand new security features to keep you and your personal data safe and secure.",R.drawable.security));
         screenItems.add(new ScreenItem("Easy Payment","Get Your Wallet Money in Easy and Fast Way.",R.drawable.easy));
 

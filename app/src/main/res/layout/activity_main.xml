@@ -6,45 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@mipmap/back"
-        android:contentDescription="back" />
 
     <TextView
         android:id="@+id/appText"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="196dp"
         android:alpha="0"
         android:fontFamily="@font/baloo"
         android:text="@string/android_app"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/game" />
 
     <ImageView
         android:id="@+id/game"
-        android:layout_width="180dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="400dp"
+        android:layout_width="225dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="184dp"
         android:alpha="0"
+        android:src="@mipmap/icon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        android:src="@drawable/game"
-         />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

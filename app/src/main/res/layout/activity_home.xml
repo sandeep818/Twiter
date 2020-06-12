@@ -7,35 +7,40 @@
     tools:context=".Home">
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/relative_Layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:elevation="20dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:elevation="20dp"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imagebg"
             android:layout_width="match_parent"
 
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/newback" />
-
-        <TextView
-            android:id="@+id/greeting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="369dp"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="0dp"
+            android:background="@color/pdlg_color_blue"
+
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/pdlg_space_1.0x"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="58dp"
             android:fontFamily="@font/bungee"
             android:gravity="center"
             android:text="TextView"
@@ -43,56 +48,58 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
             android:layout_below="@+id/greeting"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginEnd="-1dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="197dp"
             android:gravity="center"
             android:text="TextView"
             android:textColor="#FFFFFF" />
 
         <androidx.appcompat.widget.Toolbar
-            android:alpha="0"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-
             android:id="@+id/toolbar"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
+
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="56dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="339dp"
-            android:elevation="5dp" />
+            android:layout_marginEnd="360dp"
+            android:alpha="0"
+            android:elevation="5dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 
     </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="0dp"
         android:background="@color/pdlg_color_blue"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative_Layout" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:itemIconTint="@drawable/item_selected"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@drawable/item_selected"/>
+        app:menu="@menu/bottom_navigation_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

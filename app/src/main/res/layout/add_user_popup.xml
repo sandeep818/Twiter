@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="200dp"
+
+    android:background="@color/design_default_color_primary_dark"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:id="@+id/close_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/pdlg_color_white"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:background="@drawable/cerclebackground"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@color/colorAccent"
+          android:background="@color/cream"
+
+          android:src="@drawable/add"
+          android:outlineAmbientShadowColor="@color/cardview_shadow_start_color"
+          android:padding="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select User Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/pdlg_color_white"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/master_ragister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectenglebackground"
+                android:text="MASTER"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/pdlg_color_white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:background="@color/pdlg_color_blue"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/agent_ragister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectenglebackground"
+                android:padding="5dp"
+                android:text="AGENT"
+                android:textStyle="bold"
+                android:textColor="@color/pdlg_color_white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/user_ragister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:text="USER"
+                android:background="@drawable/rectenglebackground"
+                android:textStyle="bold"
+                android:textColor="@color/pdlg_color_white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

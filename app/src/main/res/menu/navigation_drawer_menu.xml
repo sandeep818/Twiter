@@ -12,7 +12,23 @@
           android:id="@+id/bank"
           android:title="Bank"
           android:icon="@drawable/wallet"/>
+      <item
+          android:id="@+id/add_user"
+
+          android:title="Create User"
+          android:icon="@drawable/add"/>
   </group>
+    <item android:title="Market">
+        <menu>
+            <item android:id="@+id/add_marketbtn"
+                android:title="Add Market"
+                android:icon="@drawable/store"/>
+            <item android:id="@+id/view_market"
+                android:title="View Market"
+                android:icon="@drawable/store"/>
+        </menu>
+
+    </item>
     <item android:title="Community">
         <menu>
             <item
