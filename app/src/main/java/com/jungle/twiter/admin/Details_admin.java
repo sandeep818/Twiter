@@ -28,12 +28,12 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Details extends Fragment implements AdapterView.OnItemClickListener {
+public class Details_admin extends Fragment implements AdapterView.OnItemClickListener {
  private ArrayList<String> arrayList;
  ListView listView;
  ArrayAdapter arrayAdapter;
 
-    public Details() {
+    public Details_admin() {
         // Required empty public constructor
     }
 
@@ -43,11 +43,11 @@ public class Details extends Fragment implements AdapterView.OnItemClickListener
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       View view =inflater.inflate(R.layout.fragment_details, container, false);
-      listView = view.findViewById(R.id.list_view);
+//      listView = view.findViewById(R.id.list_view);
 
       arrayList = new ArrayList();
-      arrayAdapter= new ArrayAdapter(getContext(),android.R.layout.simple_list_item_checked,arrayList);
-      listView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
+//      arrayAdapter= new ArrayAdapter(getContext(),android.R.layout.simple_list_item_checked,arrayList);
+//      listView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
       listView.setOnItemClickListener(this);
 
 

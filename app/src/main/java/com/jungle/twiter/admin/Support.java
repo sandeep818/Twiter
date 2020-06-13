@@ -4,6 +4,7 @@ package com.jungle.twiter.admin;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,7 @@ import io.reactivex.rxjava3.functions.Consumer;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import retrofit2.Retrofit;
 
+import static android.content.ContentValues.TAG;
 import static com.parse.Parse.getApplicationContext;
 
 
@@ -111,12 +113,13 @@ public class UserApi{
 
 
                     }
+
                 }));
 
 
 
 
-
+        Log.d("oks", "accept123: "+downloadData.size());
       return downloadData;
     }
 }
@@ -164,6 +167,7 @@ public class UserApi{
         });
 
         dataModels=new UserApi(getContext()).retrive(listView,myProgressBar);
+        Log.d("oks", "onCreateView: "+dataModels);
         adapter=new UserlistAdapter(dataModels,getContext());
         listView.setAdapter(adapter);
 

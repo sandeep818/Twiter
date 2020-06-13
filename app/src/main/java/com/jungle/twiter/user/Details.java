@@ -43,7 +43,7 @@ public class Details extends Fragment implements AdapterView.OnItemClickListener
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       View view =inflater.inflate(R.layout.fragment_details, container, false);
-      listView = view.findViewById(R.id.list_view);
+//      listView = view.findViewById(R.id.list_view);
 
       arrayList = new ArrayList();
       arrayAdapter= new ArrayAdapter(getContext(),android.R.layout.simple_list_item_checked,arrayList);

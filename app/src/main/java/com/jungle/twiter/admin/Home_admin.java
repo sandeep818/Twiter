@@ -175,7 +175,7 @@ public class Home_admin extends AppCompatActivity implements BottomNavigationVie
 
 
     Bid bid_fragment= new Bid();
-    Details details_fragment = new Details();
+    Details_admin details_admin_fragment = new Details_admin();
     Support support_fragment = new Support();
     Wallet wallet_fragment = new Wallet();
     Account account_fragment = new Account();
@@ -197,7 +197,7 @@ public class Home_admin extends AppCompatActivity implements BottomNavigationVie
                 getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out).replace(R.id.frame_layout,support_fragment).commit();
                 return true;
             case R.id.details:
-                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out).replace(R.id.frame_layout,details_fragment).commit();
+                getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fade_in,R.anim.fade_out).replace(R.id.frame_layout, details_admin_fragment).commit();
                 return true;
 
         }

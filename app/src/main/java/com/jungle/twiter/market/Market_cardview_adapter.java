@@ -1,6 +1,7 @@
 package com.jungle.twiter.market;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.jungle.twiter.R;
+import com.jungle.twiter.admin.Market_details;
 
 import java.util.ArrayList;
 
@@ -32,6 +34,18 @@ ArrayList<Market_model> market_model;
     @Override
     public void onBindViewHolder(@NonNull Market_cardview_Holder holder, int position) {
         holder.market_title.setText(market_model.get(position).getMarket_name());
+
+        holder.setItemClickListener(new ItemClickListener() {
+            @Override
+            public void onItemClickListener(View view, int position) {
+              String titleMarket =  market_model.get(position).getMarket_name();
+                Intent intent =new Intent(context, Market_details.class);
+                intent.putExtra("market",titleMarket);
+               context.startActivities(new Intent[]{intent});
+
+
+            }
+        });
 
     }
 

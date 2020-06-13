@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".admin.View_market"></activity>
+        <activity android:name=".admin.Market_details"
+            android:parentActivityName=".admin.View_market"></activity>
+        <activity android:name=".admin.View_market" />
         <activity android:name=".admin.Add_market" />
         <activity android:name=".ragister_user.Ragister_user" />
         <activity android:name=".UserAction.UserAction" />

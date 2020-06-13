@@ -19,143 +19,49 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#C5CAE9">
+
+                android:background="@color/pdlg_color_blue">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:orientation="vertical"
+                    android:background="#0D47A1"
                     android:gravity="center"
-                    android:background="@color/colorAccent">
-
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginRight="0dp"
-                    android:background="#01579B"
                     android:orientation="vertical">
 
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="@color/pdlg_color_white"
+
+                        android:src="@drawable/store" />
+
                     <TextView
+                        android:id="@+id/name_market"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="35dp"
-                        android:text="SANDEEP PATEL"
+                        android:layout_marginTop="10dp"
+                        android:text="MARKET NAME"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="admin"
-                        android:textColor="#fff"
-                        android:textSize="20sp" />
+                </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/rounded_square"
-                        android:orientation="horizontal"
-                        android:padding="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="215dp"
+                    android:layout_marginRight="10dp"
 
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="40">
-
-                            <TextView
-                                android:id="@+id/masterValue"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="20dp"
-                                android:text="56"
-                                android:textColor="#FFF"
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/masterValue"
-                                android:layout_centerHorizontal="true"
-                                android:text="Total Master"
-                                android:textColor="#C5CAE9"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="60"
-                            android:background="@drawable/square_border">
-
-                            <TextView
-                                android:id="@+id/userValue"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="20dp"
-                                android:text="2605"
-                                android:textColor="#FFC107"
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/userValue"
-                                android:layout_centerHorizontal="true"
-                                android:text="Total User"
-                                android:textColor="#C5CAE9"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="40">
-
-                            <TextView
-                                android:id="@+id/agentValue"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="20dp"
-                                android:text="61"
-                                android:textColor="#fff"
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/agentValue"
-                                android:layout_centerHorizontal="true"
-                                android:text="Total Agent"
-                                android:textColor="#C5CAE9"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-                        </RelativeLayout>
-
-                    </LinearLayout>
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:layout_marginTop="25dp"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
@@ -175,11 +81,11 @@
                                     android:id="@+id/marketTxt1"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/rounded_border"
+                                    android:background="@color/colorAccent"
                                     android:gravity="center"
                                     android:paddingTop="10dp"
                                     android:paddingBottom="10dp"
-                                    android:text="TODAY'S DATA"
+                                    android:text="TODAY"
                                     android:textColor="#fff"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -188,8 +94,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_below="@+id/marketTxt1"
-                                    android:orientation="horizontal"
-                                    android:padding="0dp">
+                                    android:orientation="horizontal">
 
                                     <LinearLayout
                                         android:layout_width="0dp"
@@ -203,7 +108,6 @@
                                             android:layout_gravity="center"
                                             android:layout_marginTop="15dp"
                                             android:text="15"
-                                            android:textColor="#303F9F"
                                             android:textSize="35sp"
                                             android:textStyle="bold" />
 
@@ -219,10 +123,10 @@
                                     </LinearLayout>
 
                                     <View
-                                        android:layout_width="3dp"
-                                        android:layout_height="match_parent"
+                                        android:layout_width="5dp"
+                                        android:layout_height="70dp"
                                         android:layout_gravity="center_vertical"
-                                        android:background="#3F51B5" />
+                                        android:background="@color/colorAccent" />
 
                                     <LinearLayout
                                         android:layout_width="0dp"
@@ -236,7 +140,6 @@
                                             android:layout_gravity="center"
                                             android:layout_marginTop="15dp"
                                             android:text="Rs. 2589"
-                                            android:textColor="#303F9F"
                                             android:textSize="35sp"
                                             android:textStyle="bold" />
 
@@ -261,16 +164,23 @@
 
                     </LinearLayout>
 
-                    <View
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#3F51B5"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+
+                        android:paddingBottom="10dp"
+                        android:text="OVERALL DETAILS:"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:layout_marginTop="25dp"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
@@ -291,38 +201,31 @@
                                     android:id="@+id/marketTxt2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/rounded_border"
+                                    android:background="@color/colorAccent"
                                     android:gravity="center"
                                     android:paddingTop="10dp"
                                     android:paddingBottom="10dp"
                                     android:text="BET PLACED"
-                                    android:textColor="#FFF"
-                                    android:textSize="15sp"
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
                                     android:textStyle="bold" />
 
 
                                 <TextView
-                                    android:id="@+id/lbetplaced"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/marketTxt2"
                                     android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginTop="20dp"
                                     android:text="300"
-                                    android:textColor="#303F9F"
                                     android:textSize="35sp"
                                     android:textStyle="bold" />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_below="@+id/lbetplaced"
-                                    android:text="Lifetime"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
 
+                                <Button
+                                    android:id="@+id/btnMarket3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
@@ -345,38 +248,25 @@
                                     android:id="@+id/marketTxt3"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/rounded_border"
+                                    android:background="@color/colorAccent"
                                     android:gravity="center"
                                     android:paddingTop="10dp"
                                     android:paddingBottom="10dp"
                                     android:text="BET AMOUNT"
                                     android:textColor="#fff"
-                                    android:textSize="15sp"
+                                    android:textSize="20sp"
                                     android:textStyle="bold" />
 
 
                                 <TextView
-                                    android:id="@+id/lbetamount"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/marketTxt3"
                                     android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:textColor="#303F9F"
+                                    android:layout_marginTop="20dp"
                                     android:text="Rs. 32946"
                                     android:textSize="35sp"
                                     android:textStyle="bold" />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_below="@+id/lbetamount"
-                                    android:text="Lifetime"
-                                    android:textSize="15sp"
-                                    android:textStyle="bold" />
-
 
 
                             </RelativeLayout>
@@ -408,37 +298,24 @@
                                     android:id="@+id/marketTxt4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/rounded_border"
+                                    android:background="@color/colorAccent"
                                     android:gravity="center"
                                     android:paddingTop="10dp"
                                     android:paddingBottom="10dp"
-                                    android:text="PROFIT"
+                                    android:text="WIN"
                                     android:textColor="#fff"
-                                    android:textSize="15sp"
+                                    android:textSize="20sp"
                                     android:textStyle="bold" />
 
 
                                 <TextView
-                                    android:id="@+id/lprofit"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/marketTxt4"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="20dp"
                                     android:text="Rs. 25462"
-                                    android:textColor="#303F9F"
                                     android:textSize="35sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_below="@+id/lprofit"
-                                    android:text="Lifetime"
-                                    android:textSize="15sp"
                                     android:textStyle="bold" />
 
 
@@ -463,37 +340,24 @@
                                     android:id="@+id/marketTxt5"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/rounded_border"
+                                    android:background="@color/colorAccent"
                                     android:gravity="center"
                                     android:paddingTop="10dp"
                                     android:paddingBottom="10dp"
-                                    android:text="MARKET"
+                                    android:text="Loose"
                                     android:textColor="#fff"
-                                    android:textSize="15sp"
+                                    android:textSize="20sp"
                                     android:textStyle="bold" />
 
 
                                 <TextView
-                                    android:id="@+id/tmarket"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/marketTxt5"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="20dp"
-                                    android:text="15"
-                                    android:textColor="#303F9F"
+                                    android:text="Rs. 1946"
                                     android:textSize="35sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_below="@+id/tmarket"
-                                    android:text="Lifetime"
-                                    android:textSize="15sp"
                                     android:textStyle="bold" />
 
 
@@ -505,16 +369,6 @@
 
 
                 </LinearLayout>
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:src="@mipmap/user"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="45dp"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/rounded_square_fill_yellow"
-                    />
 
             </RelativeLayout>
 
